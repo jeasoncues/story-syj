@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Inicio</title>
+    <link rel="shortcut icon" href="imagenes/icono.jpg" type="image/x-icon">
+    <style>
+
+
+
+body{
+    font-family: 'Montserrat' sans-serif;
+    
+}
+
+
+
+
+
+.contenedor{
+    margin: auto;
+}
+
+h1{
+  font-size: 60px;
+
+  color: #29F48F;
+
+}
+
+h2{
+    color: #29F48F;
+    font-size: 20px;
+}
+
+h3{
+    color: #29F48F;
+    font-size: 20px;
+}
+
+.banner-img{
+    animation: movimiento 2.5s linear infinite;
+}
+
+
+.android-img{
+    width: 250px;
+    height: 200px;
+    position: absolute;
+    left: -110px;
+    top: 30%;
+    animation-name: efecto;
+    animation-duration: 4s;
+    position: relative;
+    animation-direction: reverse;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+
+}
+
+
+
+.color-text {
+    color: #29F48F;
+}
+
+.bg-dark{
+    background: var(-bg_color_primary);
+}
+
+
+
+.form-control{
+    border: none;
+    outline: none;
+}
+
+.nav-link:hover{
+    color: aqua;
+}
+
+.bg-principal{
+    background: var(-bg_color_primary);
+}
+
+
+ 
+.button-label {
+   
+    position: absolute;
+    top: 10%;
+    transform: translate(145%);
+    color: #1e2433;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 10px 15px;
+    white-space: nowrap;
+    margin: 0 15px;
+    font-size: 14px;
+    line-height: 1.2;
+    box-shadow: 0 6px 32px 0 rgb(0 18 46 / 24%);
+    transition: margin 0.16s linear 0s, opacity 0.08s linear 0s;
+ }
+
+
+ .button-google {
+    position: absolute;
+    top: 29%;
+    transform: translate(-35%);
+    color: #1e2433;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 10px 15px;
+    white-space: nowrap;
+    margin: 0 15px;
+    font-size: 14px;
+    line-height: 1.2;
+    box-shadow: 0 6px 32px 0 rgb(0 18 46 / 24%);
+    transition: margin 0.16s linear 0s, opacity 0.08s linear 0s;
+
+ }
+
+@keyframes movimiento {
+
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(50px);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+    
+}
+
+.content {
+   max-width: 1170px;
+   margin-left: auto;
+   margin-right: auto;
+   padding: 1.5em;
+ }
+ 
+ .logo {
+    text-align: center;
+    font-size: 3em;
+ }
+ 
+ .logo span {
+    color: #B70E21;
+ }
+
+.content-wrapper {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+ }
+ 
+ .content-wrapper > * {
+    padding: 1em;
+ }
+ 
+ .contact-form {
+    color: #000;
+ }
+ 
+ 
+ .contact-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 columnas en el form*/
+ }
+ 
+ .contact-form form .block {
+    grid-column: 1 / 3; /* abrca una sola franja*/
+ }
+ 
+ .contact-form form p {
+    margin: 0;
+    padding: 1em;
+ }
+ 
+ 
+ .contact-form form button,
+ .contact-form form input,
+ .contact-form form textarea {
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    outline: none;
+    color: #000;
+    border-bottom: 1px solid #29F48F;
+ }
+ 
+ 
+ 
+ .contact-form form button {
+    background: #29F48F;
+    color: black;
+    border: none;
+    text-transform: uppercase;
+    padding: 1em;
+ }
+ .contact-form form button:hover,
+ .contact-form form button:focus {
+    background: #176b41;
+    color: #000;
+    transition: background-color 1s ease-out;
+    outline: none;
+ }
+ 
+ .contact-info {
+    background: #000;
+    color: #fff;
+ }
+ 
+ .contact-info h4,
+ .contact-info ul,
+ .contact-info p {
+    text-align: center;
+    margin: 0 0 1rem 0;
+ }
+ 
+ .contact-info ul {
+    list-style: none;
+    padding: 0;
+ }
+ 
+ .contact-info ul li {
+    padding: .3em;
+ }
+ 
+ 
+ /* pantalla grande */
+ @media (min-width: 700px){
+    body {
+       padding: 0 4 rem;
+    }
+ 
+    .content-wrapper {
+       display: grid;
+       grid-template-columns: 2fr 1fr;
+    }
+ 
+    .content-wrapper > *{
+       padding: 2em;
+    }
+ 
+    .contact-info h4,
+    .contact-info ul,
+    .contact-info p {
+       padding: 1em;
+       text-align: left;
+    }
+ }
+
+
+ .footer {
+   font-size: 15px;
+}
+
+
+   
+.bg-dark-mode{
+   background-color: #000;
+}
+
+
+    </style>
+  </head>
+  <body>
+
+
+
+    <main>
+        <div class="container p-4">
+          <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div style="padding-top: 120px;"> 
+                  <h1 id="maquina" style="color: red"></h1>
+                  
+                  
+                  <h2 class="text-light">¡Si se puede imaginar, se puede programar!</h2>
+                  <h2 class="text-light"> Piura, Perú. </h2>
+                  <br>
+                  <a href="#">
+                    <button type="button" id="click" class="btn btn-outline-danger rounded-pill">
+                      <i class="fas fa-envelope fa-lg "></i>
+                      Escucha esta cancion
+                    </button>
+                  </a>
+                  
+                </div>
+            </div>
+        
+            <div class="col-md-4">
+              <br>
+              <br><br><br><br>
+    <img src="imagenes/corazon.jpg" height="150px" width="700px" alt="imagen" class="img-fluid">
+            </div>
+        </div>
+      </div>
+    </main>
+
+<br>
+
+  <marquee scrollamount="30" direction="right">
+    <a href="#" download="shey.docx" title="Click">
+      <div class="banner-img">
+        <h5><span class="badge bg-light text-dark button-label">Dale un click</span></h5>
+        <img src="imagenes/carta.gif"  alt="android">
+      </div>
+    </a>
+  </marquee>
+
+
+  <script>
+
+      let click = document.querySelector("#click");
+      click.addEventListener('click',()=>{
+          let url = "https://www.youtube.com/watch?v=zLX_GcXt2pI";
+          window.open(url,'_blank');
+      })
+
+
+
+    let writing = str => {
+        let arrFromStr = str.split('');
+        let i = 0;
+        let printStr = setInterval(function(){
+        document.getElementById('maquina').innerHTML += arrFromStr[i]; 
+        i++;
+
+        if (i === arrFromStr.length ){
+            clearInterval(printStr);
+        }
+        },200);
+    }
+
+writing('Aqui escribire muchas cosas lindas para ti.');
+  </script>
+    
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
